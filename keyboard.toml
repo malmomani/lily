@@ -9,31 +9,27 @@ usb_enable = false
 
 [matrix]
 # Input and output pins are mandatory
-output_pins = ["gpio4", "gpio5", "gpio7", "gpio15","gpio16","gpio18"]
-input_pins = ["gpio47", "gpio48", "gpio9","gpio10","gpio11"]
+input_pins = ["gpio6", "gpio7", "gpio20", "gpio21"]
+output_pins = ["gpio3", "gpio4", "gpio5"]
 # WARNING: Currently row2col/col2row is set in RMK's feature gate, row2col config here is valid ONLY when you're using cloud compilation
 # row2col = true
 
 [layout]
-rows = 6
-cols = 6
+rows = 4
+cols = 3
 layers = 2
 keymap = [
     [
-        ["A", "B", "C","D","E","F"],
-        ["Kc1", "Kc2", "Kc3","D","E","F"],
-        ["A", "B", "C","D","E","F"],
-        ["Kc1", "Kc2", "Kc3","D","E","F"],
-        ["LCtrl", "MO(1)", "LShift","D","E","F"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)","D","E","F"]
+        ["A", "B", "C"],
+        ["Kc1", "Kc2", "Kc3"],
+        ["LCtrl", "MO(1)", "LShift"],
+        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
     ],
     [
-        ["A", "B", "C","D","E","F"],
-        ["Kc1", "Kc2", "Kc3","D","E","F"],
-        ["_", "TT(1)", "TG(2)","D","E","F"],
-        ["_", "_", "_","D","E","F"],
-        ["_", "_", "_","D","E","F"],
-        ["_", "_", "_","D","E","F"]
+        ["_", "TT(1)", "TG(2)"],
+        ["_", "_", "_"],
+        ["_", "_", "_"],
+        ["_", "_", "_"]
     ],
 ]
 
